@@ -43,89 +43,45 @@
 | 🖥️ **Interactive UI** | Streamlit frontend for uploading and exploring video insights |
 
 ---
-import streamlit as st
+## 🛠️ Tech Stack
 
-st.markdown("## 🛠️ Tech Stack")
+<div align="center">
 
-# -------------------------------
-# 🎨 STYLE
-# -------------------------------
-st.markdown("""
-<style>
-.stack-card {
-    padding: 18px;
-    border-radius: 12px;
-    background: linear-gradient(145deg, #111827, #1f2937);
-    box-shadow: 0 6px 20px rgba(0,0,0,0.4);
-    margin-bottom: 15px;
-    transition: 0.3s;
-}
-.stack-card:hover {
-    transform: translateY(-5px) scale(1.03);
-    box-shadow: 0 12px 30px rgba(0,0,0,0.7);
-}
-.stack-title {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 6px;
-}
-.stack-tech {
-    font-size: 14px;
-    color: #9CA3AF;
-}
-</style>
-""", unsafe_allow_html=True)
+### 🎨 Frontend  
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 
-# -------------------------------
-# 🧱 LAYOUT
-# -------------------------------
-col1, col2 = st.columns(2)
+---
 
-# LEFT COLUMN
-with col1:
-    st.markdown("""
-    <div class="stack-card">
-        <div class="stack-title">🎨 Frontend</div>
-        <div class="stack-tech">Streamlit · Python</div>
-    </div>
-    """, unsafe_allow_html=True)
+### ⚙️ Backend  
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
+![Uvicorn](https://img.shields.io/badge/Uvicorn-000000?style=for-the-badge&logo=python&logoColor=white)
 
-    st.markdown("""
-    <div class="stack-card">
-        <div class="stack-title">⚙️ Backend</div>
-        <div class="stack-tech">FastAPI · Uvicorn</div>
-    </div>
-    """, unsafe_allow_html=True)
+---
 
-    st.markdown("""
-    <div class="stack-card">
-        <div class="stack-title">🧠 AI / ML</div>
-        <div class="stack-tech">Whisper · PyTorch</div>
-    </div>
-    """, unsafe_allow_html=True)
+### 🧠 AI / ML  
+![Whisper](https://img.shields.io/badge/Whisper-000000?style=for-the-badge)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
 
-# RIGHT COLUMN
-with col2:
-    st.markdown("""
-    <div class="stack-card">
-        <div class="stack-title">☁️ Data Platform</div>
-        <div class="stack-tech">Databricks · Delta Lake · PySpark</div>
-    </div>
-    """, unsafe_allow_html=True)
+---
 
-    st.markdown("""
-    <div class="stack-card">
-        <div class="stack-title">📊 Data Tools</div>
-        <div class="stack-tech">NumPy · Pandas</div>
-    </div>
-    """, unsafe_allow_html=True)
+### ☁️ Data Platform  
+![Databricks](https://img.shields.io/badge/Databricks-FF3621?style=for-the-badge&logo=databricks&logoColor=white)
+![Delta Lake](https://img.shields.io/badge/Delta%20Lake-003366?style=for-the-badge)
+![PySpark](https://img.shields.io/badge/PySpark-FDEE21?style=for-the-badge&logo=apache-spark&logoColor=black)
 
-    st.markdown("""
-    <div class="stack-card">
-        <div class="stack-title">📈 Model Tracking</div>
-        <div class="stack-tech">MLflow</div>
-    </div>
-    """, unsafe_allow_html=True)
+---
+
+### 📊 Data Tools  
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
+
+---
+
+### 📈 Model Tracking  
+![MLflow](https://img.shields.io/badge/MLflow-0194E2?style=for-the-badge&logo=mlflow&logoColor=white)
+
+</div>
 
 ## 🏗️ Architecture
 
