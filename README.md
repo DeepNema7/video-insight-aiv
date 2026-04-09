@@ -43,18 +43,81 @@
 | 🖥️ **Interactive UI** | Streamlit frontend for uploading and exploring video insights |
 
 ---
+import streamlit as st
 
-## 🛠️ Tech Stack
+st.markdown("## 🛠️ Tech Stack")
 
-| Layer | Technology |
-|---|---|
-| **Frontend** | Streamlit · Python |
-| **Backend** | FastAPI · Uvicorn |
-| **AI / ML** | TensorFlow · PyTorch · OpenCV |
-| **Data Platform** | Databricks · Delta Lake · PySpark |
-| **Data Utilities** | NumPy · Pandas |
-| **Model Tracking** | MLflow |
+st.markdown("""
+<style>
+.stack-card {
+    padding: 18px;
+    border-radius: 12px;
+    background: linear-gradient(145deg, #111827, #1f2937);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+    margin-bottom: 12px;
+    transition: 0.3s;
+}
+.stack-card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+}
+.stack-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.stack-tech {
+    font-size: 14px;
+    color: #9CA3AF;
+}
+</style>
+""", unsafe_allow_html=True)
 
+col1, col2 = st.columns(2)
+
+with col1:
+    st.markdown("""
+    <div class="stack-card">
+        <div class="stack-title">🎨 Frontend</div>
+        <div class="stack-tech">Streamlit · Python</div>
+    </div>
+    """, unsafe_allow_html=True)
+
+    st.markdown("""
+    <div class="stack-card">
+        <div class="stack-title">⚙️ Backend</div>
+        <div class="stack-tech">FastAPI · Uvicorn</div>
+    </div>
+    """, unsafe_allow_html=True)
+
+    st.markdown("""
+    <div class="stack-card">
+        <div class="stack-title">🧠 AI / ML</div>
+        <div class="stack-tech">Whisper · PyTorch</div>
+    </div>
+    """, unsafe_allow_html=True)
+
+with col2:
+    st.markdown("""
+    <div class="stack-card">
+        <div class="stack-title">☁️ Data Platform</div>
+        <div class="stack-tech">Databricks · Delta Lake · PySpark</div>
+    </div>
+    """, unsafe_allow_html=True)
+
+    st.markdown("""
+    <div class="stack-card">
+        <div class="stack-title">📊 Data Tools</div>
+        <div class="stack-tech">NumPy · Pandas</div>
+    </div>
+    """, unsafe_allow_html=True)
+
+    st.markdown("""
+    <div class="stack-card">
+        <div class="stack-title">📈 Tracking</div>
+        <div class="stack-tech">MLflow</div>
+    </div>
+    """, unsafe_allow_html=True)
 ---
 
 ## 🏗️ Architecture
