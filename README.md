@@ -47,6 +47,9 @@ import streamlit as st
 
 st.markdown("## 🛠️ Tech Stack")
 
+# -------------------------------
+# 🎨 STYLE
+# -------------------------------
 st.markdown("""
 <style>
 .stack-card {
@@ -54,17 +57,17 @@ st.markdown("""
     border-radius: 12px;
     background: linear-gradient(145deg, #111827, #1f2937);
     box-shadow: 0 6px 20px rgba(0,0,0,0.4);
-    margin-bottom: 12px;
+    margin-bottom: 15px;
     transition: 0.3s;
 }
 .stack-card:hover {
-    transform: translateY(-5px) scale(1.02);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.7);
 }
 .stack-title {
     font-size: 18px;
     font-weight: bold;
-    margin-bottom: 5px;
+    margin-bottom: 6px;
 }
 .stack-tech {
     font-size: 14px;
@@ -73,8 +76,12 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
+# -------------------------------
+# 🧱 LAYOUT
+# -------------------------------
 col1, col2 = st.columns(2)
 
+# LEFT COLUMN
 with col1:
     st.markdown("""
     <div class="stack-card">
@@ -97,6 +104,7 @@ with col1:
     </div>
     """, unsafe_allow_html=True)
 
+# RIGHT COLUMN
 with col2:
     st.markdown("""
     <div class="stack-card">
@@ -114,11 +122,10 @@ with col2:
 
     st.markdown("""
     <div class="stack-card">
-        <div class="stack-title">📈 Tracking</div>
+        <div class="stack-title">📈 Model Tracking</div>
         <div class="stack-tech">MLflow</div>
     </div>
     """, unsafe_allow_html=True)
----
 
 ## 🏗️ Architecture
 
