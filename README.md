@@ -90,45 +90,8 @@
 </tr>
 </table>
 
-## 🏗️ Architecture
 
-The system follows a clean 4-layer pipeline:
-
-```
-┌─────────────────────────────────────────────────────────┐
-│               Frontend  (Streamlit)                      │
-│   • Video upload widget (MP4, AVI, MOV)                  │
-│   • Sends POST /analyze to FastAPI                       │
-│   • Renders bounding boxes, labels, summaries            │
-└────────────────────────┬────────────────────────────────┘
-                         │  HTTP
-                         ▼
-┌─────────────────────────────────────────────────────────┐
-│               Backend  (FastAPI)                         │
-│   • POST /analyze  — accepts video, triggers pipeline    │
-│   • GET  /results/{job_id}  — polls job status           │
-│   • GET  /health   — service health check                │
-│   • Async endpoints served via Uvicorn                   │
-└────────────────────────┬────────────────────────────────┘
-                         │  Databricks REST API
-                         ▼
-┌─────────────────────────────────────────────────────────┐
-│               Databricks Pipeline  (PySpark)             │
-│   • Reads video from DBFS / blob storage                 │
-│   • OpenCV extracts frames at configurable FPS           │
-│   • AI model inference distributed across Spark workers  │
-│   • Aggregates frame results → scene-level summaries     │
-└────────────────────────┬────────────────────────────────┘
-                         │  Delta write
-                         ▼
-┌─────────────────────────────────────────────────────────┐
-│               Delta Lake  +  AI Models                   │
-│   • ACID Delta tables: metadata, frames, insights        │
-│   • TensorFlow / PyTorch object detection UDFs           │
-│   • MLflow model versioning & experiment tracking        │
-│   • Time-travel queries on all result tables             │
-└─────────────────────────────────────────────────────────┘
-```
+<img width="1440" height="1312" alt="image" src="https://github.com/user-attachments/assets/1d26da8c-9f0a-47f6-893d-7f43de1ed011" />
 
 ---
 
