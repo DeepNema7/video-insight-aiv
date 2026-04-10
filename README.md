@@ -43,45 +43,52 @@
 | 🖥️ **Interactive UI** | Streamlit frontend for uploading and exploring video insights |
 
 ---
-## 🛠️ Tech Stack
+ ## 🛠️ Tech Stack
 
-<div align="center">
-
-### 🎨 Frontend  
-![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-
----
-
-### ⚙️ Backend  
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
-![Uvicorn](https://img.shields.io/badge/Uvicorn-000000?style=for-the-badge&logo=python&logoColor=white)
-
----
-
-### 🧠 AI / ML  
-![Whisper](https://img.shields.io/badge/Whisper-000000?style=for-the-badge)
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
-
----
-
-### ☁️ Data Platform  
-![Databricks](https://img.shields.io/badge/Databricks-FF3621?style=for-the-badge&logo=databricks&logoColor=white)
-![Delta Lake](https://img.shields.io/badge/Delta%20Lake-003366?style=for-the-badge)
-![PySpark](https://img.shields.io/badge/PySpark-FDEE21?style=for-the-badge&logo=apache-spark&logoColor=black)
-
----
-
-### 📊 Data Tools  
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
-
----
-
-### 📈 Model Tracking  
-![MLflow](https://img.shields.io/badge/MLflow-0194E2?style=for-the-badge&logo=mlflow&logoColor=white)
-
-</div>
+<table>
+<tr>
+<td><strong>🎨 Frontend</strong></td>
+<td>
+  <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
+</td>
+</tr>
+<tr>
+<td><strong>⚙️ Backend</strong></td>
+<td>
+  <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Uvicorn-000000?style=flat-square&logo=python&logoColor=white"/>
+</td>
+</tr>
+<tr>
+<td><strong>🧠 AI / ML</strong></td>
+<td>
+  <img src="https://img.shields.io/badge/Whisper-000000?style=flat-square"/>
+  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white"/>
+</td>
+</tr>
+<tr>
+<td><strong>☁️ Data Platform</strong></td>
+<td>
+  <img src="https://img.shields.io/badge/Databricks-FF3621?style=flat-square&logo=databricks&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Delta%20Lake-003366?style=flat-square"/>
+  <img src="https://img.shields.io/badge/PySpark-FDEE21?style=flat-square&logo=apache-spark&logoColor=black"/>
+</td>
+</tr>
+<tr>
+<td><strong>📊 Data Tools</strong></td>
+<td>
+  <img src="https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white"/>
+</td>
+</tr>
+<tr>
+<td><strong>📈 Model Tracking</strong></td>
+<td>
+  <img src="https://img.shields.io/badge/MLflow-0194E2?style=flat-square&logo=mlflow&logoColor=white"/>
+</td>
+</tr>
+</table>
 
 ## 🏗️ Architecture
 
