@@ -338,11 +338,7 @@ Contributions are welcome! Follow these steps:
 Please make sure your code follows PEP 8 and includes docstrings for new functions.
 
 ---
-
-## 📄 License
-
-This project is open-source. See the [LICENSE](LICENSE) file for details.
-
+ 
 ---
 
 <div align="center">
